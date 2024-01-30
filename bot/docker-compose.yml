@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  vas100bot:
+    build: .
+    restart: always
+    volumes:
+      - ./data:/usr/src/app/data
+    environment:
+      - API_KEY=${API_KEY}
